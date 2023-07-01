@@ -2,7 +2,7 @@
 import React, { useState, useContext,useEffect } from "react";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
-import { error } from "console";
+// import { error } from "console";
 import { BiGridSmall } from "react-icons/bi";
 import { Appcontext } from "../context/Context";
 import { signInwithGoogle } from "../Auth/Auth";
@@ -11,9 +11,8 @@ import { useRouter } from "next/navigation";
 import {  toast } from 'react-toastify';
 import {AiFillEye} from "react-icons/ai"
 import {BiSolidHide} from "react-icons/bi"
-export const style = {
-  error: "  text-start  text-base text-red-500",
-};
+import { styles } from "../page";
+
 const SignUp = () => {
 const router=useRouter()
   const appcontext = useContext(Appcontext);
@@ -152,7 +151,7 @@ const router=useRouter()
             </div>
             <div className=" w-80 sm:w-450px ">
               {formError.username && (
-                <p className={style.error}>{formError.username}</p>
+                <p className={styles.errorsyle}>{formError.username}</p>
               )}
             </div>
 
@@ -167,7 +166,7 @@ const router=useRouter()
             </div>
             <div className="w-80 sm:w-450px">
               {formError.email && (
-                <p className={style.error}>{formError.email}</p>
+                <p className={styles.errorsyle}>{formError.email}</p>
               )}
             </div>
 
@@ -183,7 +182,7 @@ const router=useRouter()
             </div>
             <div className="w-80 sm:w-450px">
               {formError.password && (
-                <p className={style.error}>{formError.password}</p>
+                <p className={styles.errorsyle}>{formError.password}</p>
               )}
             </div>
 
@@ -199,7 +198,7 @@ const router=useRouter()
 
             <div className="w-80 sm:w-450px">
               {formError.cpassword && (
-              <p className={style.error}>{formError.cpassword}</p>
+              <p className={styles.errorsyle}>{formError.cpassword}</p>
               )}
             </div>
 

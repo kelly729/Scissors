@@ -102,4 +102,5 @@ export const styles = {
   fontsizeSmallheading: "sm:text-header-sm leading-11  text-mid  ",
   fontsizeBigtext: "sm:text-text-lg  leading-6 sm:w-700 text-text-text-sm    ",
   fontsizeSmallText: "text-text-sm leading-6  w-80   ",
+  errorsyle: "text-start  text-base text-red-500"
 };

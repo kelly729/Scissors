@@ -7,12 +7,12 @@ import { useContext,useState,useEffect } from "react"
 import { Appcontext } from '../context/Context'
 import {auth,GoogleProvider} from "../libs/firebaseConfig"
 import { signInWithPopup } from 'firebase/auth'
-import { style } from '../Signup/page'
 import { signInwithGoogle,LoginwithEmail } from '../Auth/Auth'
 import { useRouter } from 'next/navigation'
 import {  toast } from 'react-toastify';
 import {AiFillEye} from "react-icons/ai"
 import {BiSolidHide} from "react-icons/bi"
+import { styles } from "../page";
 
 const Login = () => {
   const router=useRouter()
@@ -118,7 +118,7 @@ const Login = () => {
           <input name='email' value={form.email} onChange={handleChange} placeholder='Email adress ' type="text" />
             </div>
             <div className='w-80 sm:w-450px'>
-            {formerror.email && <small className={style.error}>{formerror.email}</small> }
+            {formerror.email && <small className={styles.errorsyle}>{formerror.email}</small> }
             </div>
           <div className='relative'>
           
@@ -126,7 +126,7 @@ const Login = () => {
           <i onClick={()=>setHidden(!ishidden)} className="eye">{ishidden?<BiSolidHide/>:<AiFillEye/>}</i>
           </div>
           <div className='w-80 sm:w-450px'>
-          {formerror.password && <small className={style.error} >{formerror.password}</small> }
+          {formerror.password && <small className={styles.errorsyle} >{formerror.password}</small> }
          
           </div>
 
