@@ -22,6 +22,6 @@ export const auth=getAuth()
 export const db=getFirestore(app)
 // export const EmailProvider=new createUserWithEmailAndPassword()
 export const GoogleProvider= new GoogleAuthProvider()
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
 
 
