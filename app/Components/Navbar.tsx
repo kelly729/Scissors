@@ -59,7 +59,7 @@ const Navbar = () => {
   useEffect(()=>{
     GetCurrentuserDetails()
 
-  },[currentUser])
+  },[])
   
 
   // LOG OUT USER
