@@ -16,7 +16,7 @@ import { Appcontext } from "../context/Context";
 
 const Hero = () => {
   // MOBILE STATE
-  const [isMobile, setisMobile] = useState(window.innerWidth <= 450);
+  // const [isMobile, setisMobile] = useState(window.innerWidth <= 450);
   const appcontext=useContext(Appcontext)
   const {currentUser}=appcontext
   
@@ -30,9 +30,7 @@ const Hero = () => {
           Advanced <span>URL Shortening</span> Solution
         </h2>
         <p className={styles.fontsizeBigtext + "sm:ml-7rem"}>
-          {isMobile
-            ? "Customize URLs to strengthen your brand with personalized links and domains.Sign Up"
-            : "Customize URLs to strengthen your brand and engage users. Utilize branded links, custom slugs, and domain customization options for a personalized touch."}
+            Customize URLs to strengthen your brand and engage users. Utilize branded links, custom slugs, and domain customization options for a personalized touch
         </p>
 
         <div className="flex sm:justify-center sm:mt-xxl my-11">

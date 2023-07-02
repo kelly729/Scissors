@@ -11,7 +11,7 @@ import line from "../public/icons/line.svg";
 import { useState, useContext } from "react";
 import { Appcontext } from "./context/Context";
 import Urlmodal from "./feed/Urlmodal";
-import Network from "./network/Network";
+// import Network from "./network/Network";
 
 export default function Home() {
   const appcontext = useContext(Appcontext);
@@ -23,7 +23,7 @@ export default function Home() {
   const [modal, setModal] = useState(false);
 
   return (
-    <Network>
+    
       <div className="">
         <section className="my-5">
           <div className="margin-main">
@@ -73,7 +73,6 @@ export default function Home() {
           )}
         </section>
       </div>
-     </Network>
   );
 }
 // Logo component
